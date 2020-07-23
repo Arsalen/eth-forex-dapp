@@ -58,9 +58,21 @@ pipeline {
                 }
             }
 
+            input {
+                
+                message "Which network?"
+                
+                parameters {
+                    
+                    choice {
+                        name: "NETWORK", choices["private", "live", "ropsten", "kovan", "rinkeby"]
+                    }
+                }
+            }
+
             steps {
 
-                sh "truffle migrate --network ropsten"
+                sh "truffle migrate --network ${params.NETWORK}"
             }
         }
     }
