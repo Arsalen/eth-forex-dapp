@@ -59,14 +59,14 @@ pipeline {
             }
 
             input {
-                
+
                 message "Which network?"
                 
                 parameters {
                     
-                    choice {
+                    choice (
                         name: "NETWORK", choices["private", "live", "ropsten", "kovan", "rinkeby"]
-                    }
+                    )
                 }
             }
 
