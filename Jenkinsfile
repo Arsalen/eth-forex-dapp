@@ -14,6 +14,7 @@ pipeline {
         stage("SETUP") {
 
             when {
+                
                 expression {
                     !fileExists(".env") && !fileExists("config/app.config.json") && !fileExists("config/key.store.json")
                 }
@@ -27,6 +28,7 @@ pipeline {
                     file(credentialsId: "config", variable: "configuration"),
                     file(credentialsId: "key", variable: "keystore"),
                 ]) {
+                    
                     sh "cp \$environment .env"
                     sh "cp \$configuration config/app.config.json"
                     sh "cp \$keystore config/key.store.json"
@@ -53,6 +55,7 @@ pipeline {
         stage("MIGRATE") {
 
             when {
+                
                 expression {
                     params.START == "YES"
                 }
@@ -61,6 +64,7 @@ pipeline {
             input {
 
                 message "which network?"
+                
                 parameters {
                     string(name: 'NETWORK', defaultValue: 'ropsten', description: 'please specify the network Id')
                 }
