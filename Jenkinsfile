@@ -17,19 +17,19 @@ pipeline {
                 expression {
                     !fileExists(".env") && !fileExists("config/app.config.json") && !fileExists("config/key.store.json")
                 }
+            }
+            
+            steps {
 
-                steps {
-
-                    withCredentials([
-                        file(credentialsId: ".env", variable: "environment"),
-                        file(credentialsId: "config", variable: "configuration"),
-                        file(credentialsId: "key", variable: "keystore"),
-                    ]) {
+                withCredentials([
+                    file(credentialsId: ".env", variable: "environment"),
+                    file(credentialsId: "config", variable: "configuration"),
+                    file(credentialsId: "key", variable: "keystore"),
+                ]) {
 
                         sh "cp \$environment .env"
                         sh "cp \$configuration config/app.config.json"
                         sh "cp \$keystore config/key.store.json"
-                    }
                 }
             }
         }
