@@ -21,7 +21,7 @@
 require('dotenv').config({path: '.env'});
 const config = require("./config/app.config");
 
-const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('truffle-hdwallet-provider');
 
 const mnemonic = process.env.MNEMONIC.trim();
 const endpoint = `${config.infuraEndPoint}${process.env.INFURA_API_KEY}`;
