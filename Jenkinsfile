@@ -60,19 +60,15 @@ pipeline {
 
             input {
 
-                message "Which network?"
-                
+                message "which network?"
                 parameters {
-                    
-                    choice (
-                        name: "NETWORK", choices["private", "live", "ropsten", "kovan", "rinkeby"]
-                    )
+                    string(name: 'NETWORK', defaultValue: 'ropsten', description: 'please specify the network Id')
                 }
             }
 
             steps {
 
-                sh "truffle migrate --network ${params.NETWORK}"
+                sh "truffle migrate --network ${NETWORK}"
             }
         }
     }
