@@ -60,7 +60,7 @@ pipeline {
 
             steps {
 
-                sh "truffle migrate"
+                sh "truffle migrate --network ropsten"
             }
         }
     }
