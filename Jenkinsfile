@@ -8,7 +8,7 @@ pipeline {
             name: "START", choices: ["NO", "YES"], description: "To start or not to start"
         )
     }
-    
+
     stages {
 
         stage("SETUP") {
@@ -36,7 +36,10 @@ pipeline {
 
         stage("COMPILE") {
 
-            sh "truffle compile"            
+            steps {
+
+                sh "truffle compile"            
+            }
         }
 
         stage("MIGRATE") {
@@ -47,7 +50,10 @@ pipeline {
                 }
             }
 
-            sh "truffle migrate"
+            steps {
+
+                sh "truffle migrate"
+            }
         }
     }
 }
