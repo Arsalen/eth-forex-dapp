@@ -1,12 +1,14 @@
 pipeline {
 
     agent any
-
+    
     parameters {
 
-        name: "START", choices: ["NO", "YES"], description: "To start or not to start"
+        choice (
+            name: "START", choices: ["NO", "YES"], description: "To start or not to start"
+        )
     }
-
+    
     stages {
 
         stage("SETUP") {
