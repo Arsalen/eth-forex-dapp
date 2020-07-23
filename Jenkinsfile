@@ -34,6 +34,14 @@ pipeline {
             }
         }
 
+        stage("BUILD") {
+
+            steps {
+
+                sh "npm i --save"
+            }
+        }
+
         stage("COMPILE") {
 
             steps {
