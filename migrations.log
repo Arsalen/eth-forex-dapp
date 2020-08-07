@@ -3,12 +3,15 @@ Compiling your contracts...
 > Everything is up to date, there is nothing to compile.
 
 
+⚠️  Important ⚠️
+If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
+
 
 Starting migrations...
 ======================
 > Network name:    'ropsten'
 > Network id:      3
-> Block gas limit: 8000000 (0x7a1200)
+> Block gas limit: 8000000
 
 
 1_initial_migration.js
@@ -16,26 +19,23 @@ Starting migrations...
 
    Deploying 'Migrations'
    ----------------------
-   > transaction hash:    0x06974415874191ac8c791b7c6956640d881d4d4499b57151c06bd0f641faf0fd
-   > Blocks: 3            Seconds: 364
-   > contract address:    0x3a7e0d5140DEeaB1A118feFe3294454Bd45aa44c
-   > block number:        8337745
-   > block timestamp:     1595321216
+   > transaction hash:    0x16d90498d6a29faa39a9fdaa44c127d771886bb0a6e9af7dc7550523ec0b8980
+- Blocks: 0            Seconds: 0
+   > Blocks: 0            Seconds: 10
+   > contract address:    0xb6b81bf1b3974a627B68EA68455f6d571B34F9F5
    > account:             0x12e024Db6dD4E3a6Df2B75394224eD713C2cdE38
-   > balance:             0.493433
-   > gas used:            164175 (0x2814f)
+   > balance:             0.897955614368217178
+   > gas used:            175095
    > gas price:           20 gwei
    > value sent:          0 ETH
-   > total cost:          0.0032835 ETH
+   > total cost:          0.0035019 ETH
 
    Pausing for 2 confirmations...
    ------------------------------
-   > confirmation number: 2 (block: 8337748)
-
-   > Saving migration to chain.
+   > confirmation number: 2 (block: 8450131)
    > Saving artifacts
    -------------------------------------
-   > Total cost:           0.0032835 ETH
+   > Total cost:           0.0035019 ETH
 
 
 2_forex_migration.js
@@ -43,30 +43,27 @@ Starting migrations...
 
    Deploying 'Forex'
    -----------------
-   > transaction hash:    0xc9eaa65f54b36dc743c305233f1ca17ff87ef283320b773951d5d419e3c75ea5
-   > Blocks: 8            Seconds: 64
-   > contract address:    0xca5acE3853cDaDfA172d91494D846Ee28270A19f
-   > block number:        8337764
-   > block timestamp:     1595321538
+   > transaction hash:    0x50f6d3e7707ffd21ab2f022b46fe98c56e6f6f4e42f9dad7db8ae9a75b8a46e7
+- Blocks: 0            Seconds: 0
+   > Blocks: 0            Seconds: 13
+   > contract address:    0x58309EF38ea0903AdBcFb9d0aC0123E35160Df5B
    > account:             0x12e024Db6dD4E3a6Df2B75394224eD713C2cdE38
-   > balance:             0.49258618
-   > gas used:            609080 (0x94b38)
+   > balance:             0.885680514368217178
+   > gas used:            613755
    > gas price:           20 gwei
    > value sent:          0 ETH
-   > total cost:          0.0121816 ETH
+   > total cost:          0.0122751 ETH
 
    Pausing for 2 confirmations...
    ------------------------------
-   > confirmation number: 1 (block: 8337765)
-   > confirmation number: 2 (block: 8337766)
-
-   > Saving migration to chain.
+   > confirmation number: 1 (block: 8450134)
+   > confirmation number: 2 (block: 8450135)
    > Saving artifacts
    -------------------------------------
-   > Total cost:           0.0121816 ETH
+   > Total cost:           0.0122751 ETH
 
 
 Summary
 =======
 > Total deployments:   2
-> Final cost:          0.0154651 ETH
+> Final cost:          0.015777 ETH
