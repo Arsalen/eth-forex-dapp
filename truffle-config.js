@@ -24,7 +24,7 @@ const config = require("./config/app.config");
 const HDWalletProvider = require('truffle-hdwallet-provider');
 
 const mnemonic = process.env.MNEMONIC.trim();
-const endpoint = `${config.infuraEndPoint}${process.env.INFURA_API_KEY}`;
+const endpoint = `${config.infura.endPoint}${config.infura.key}`;
 
 // const infuraKey = "fj4jll3k.....";
 //

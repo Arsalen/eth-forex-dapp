@@ -1,28 +1,28 @@
 {
-    "name": "eth-forex-dapp",
-    "version": "1.0.0",
-    "description": "",
-    "main": "truffle-config.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Arsalen/eth-forex-dapp.git"
-    },
-    "keywords": [
-      "Ethereum",
-      "Forex"
-    ],
-    "author": "Arsalen",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/Arsalen/eth-forex-dapp/issues"
-    },
-    "homepage": "https://github.com/Arsalen/eth-forex-dapp#readme",
-    "dependencies": {
-      "dotenv": "^8.2.0",
-      "truffle-hdwallet-provider": "^1.0.17"
-    }
+  "name": "eth-forex-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arsalen/eth-forex-dapp.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "Forex"
+  ],
+  "author": "Arsalen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arsalen/eth-forex-dapp/issues"
+  },
+  "homepage": "https://github.com/Arsalen/eth-forex-dapp#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ethers": "^5.0.8",
+    "truffle-hdwallet-provider": "^1.0.17"
   }
-  
+}
