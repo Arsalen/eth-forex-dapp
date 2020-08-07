@@ -1,4 +1,4 @@
-# eth-forex-dapp
+# eth-sample-dapp
 
 Third out of three components of the ethereum-oracle-api-dapp project:
   - [ethereum oracle](https://github.com/Arsalen/eth-oracle)
@@ -39,7 +39,7 @@ SECRET="a1B2c3D4e5F6g7H"  # Secret to decrypt keystore
 {
    "infura": {
         "endPoint": "https://ropsten.infura.io/v3/",
-        "key": "abcd1efgh2ijkl3mnop4qrst5uvwx6yz" // Infura api key
+        "key": "abcd1efgh2ijkl3mnop4qrst5uvwx6yz"
     },
     "network": 3
 }

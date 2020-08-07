@@ -1,4 +1,5 @@
 node_modules/
+build/contracts/
 package-lock.json
 config/*.json
 .env
