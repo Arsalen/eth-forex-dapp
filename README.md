@@ -1,9 +1,9 @@
 # eth-forex-dapp
 
 Third out of three components of the ethereum-oracle-api-dapp project:
-  - ethereum oracle
+  - [ethereum oracle](https://github.com/Arsalen/eth-oracle)
   - [ethereum API server](https://github.com/Arsalen/eth-api)
-  - [ethereum sample dapp](https://github.com/Arsalen/eth-forex-dapp)
+  - ethereum sample dapp
 
 ## Overview
 
@@ -25,7 +25,7 @@ On [MEW](https://www.myetherwallet.com/), generate a wallet through a mnemonic p
 
 Configuration and secret files are omitted, you can though setup your own if you have managed to follow the prerequisites.
 
-.env
+``` .env ```
 
 ```INI
 MNEMONIC="one two three four five six seven eight nine ten eleven twelve" # Mnemonic passphrase
@@ -33,7 +33,7 @@ MNEMONIC="one two three four five six seven eight nine ten eleven twelve" # Mnem
 SECRET="a1B2c3D4e5F6g7H"  # Secret to decrypt keystore
 ```
 
-config/app.config.json
+``` config/app.config.json ```
 
 ```JSON
 {
@@ -45,7 +45,7 @@ config/app.config.json
 }
 ```
 
-key.store.js
+``` key.store.js ```
 
 ```JS
 require("dotenv").config({path: ".env"});
@@ -72,7 +72,7 @@ const keystore = web3.eth.accounts.encrypt(account.privateKey, password);
 console.log(JSON.stringify(keystore));
 ```
 
-config/key.store.json From https://www.myetherwallet.com/create-wallet then encrypted using key.js
+``` config/key.store.json ``` From https://www.myetherwallet.com/create-wallet then encrypted using key.js
 
 ```JSON
 {"version":3,"id":"<id>","address":"<address","crypto":{"ciphertext":"<crypto.ciphertext>","cipherparams":{"iv":"<crypto.cipherparams.iv>"},"cipher":"<crypto.cipher>","kdf":"<cryoto.kdf>","kdfparams":{"dklen":"<crypto.kdfparams.dklen>","salt":"<crypto.kdfparams.salt>","n":"<crypto.kdfparams.n>","r":"<crypto.kdfparams.dkler>","p":"<crypto.kdfparams.p>"},"mac":"<crypto.mac>"}}
