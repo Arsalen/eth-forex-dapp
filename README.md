@@ -9,6 +9,8 @@ Third out of three components of the ethereum-oracle-api-dapp project:
 
 An Ethereum smart contract to deploy on [ropsten](https://ropsten.etherscan.io/) that holds the most recent [foreign exchange](http://freeforexapi.com/) price rates from several registred ethereum oracles.
 
+An instance is already deployed [here](https://ropsten.etherscan.io/address/0x7Fe0c23379aBd49eE51D33163bdE00AacF70f443).
+
 ### What is an oracle?
 
 An oracle is a service that provides “trusted” data to a smart contract, through transactions. “Trusted” because, trust is a personal issue. Two entities might not “trust” data in the same way, given some specific implementation of an oracle.
