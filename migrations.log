@@ -1,17 +1,24 @@
 Compiling your contracts...
 ===========================
-> Everything is up to date, there is nothing to compile.
+> Compiling ./contracts/Forex.sol
+> Compiling ./contracts/Migrations.sol
+> Compilation warnings encountered:
 
+   eth-sample-dapp/contracts/Forex.sol:4:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
 
-⚠️  Important ⚠️
-If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
+> Artifacts written to eth-sample-dapp/build/contracts
+> Compiled successfully using:
+   - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
 
 
 Starting migrations...
 ======================
 > Network name:    'ropsten'
 > Network id:      3
-> Block gas limit: 8000000
+> Block gas limit: 8000000 (0x7a1200)
 
 
 1_initial_migration.js
@@ -19,23 +26,27 @@ Starting migrations...
 
    Deploying 'Migrations'
    ----------------------
-   > transaction hash:    0x16d90498d6a29faa39a9fdaa44c127d771886bb0a6e9af7dc7550523ec0b8980
-- Blocks: 0            Seconds: 0
-   > Blocks: 0            Seconds: 10
-   > contract address:    0xb6b81bf1b3974a627B68EA68455f6d571B34F9F5
+   > transaction hash:    0x55d8a43b97196476bcffa9a22dadba0cb9463d47bf6c109b7f16f89f1d112ea1
+   > Blocks: 1            Seconds: 17
+   > contract address:    0x319707dD1f9F3be56447a362CC49F8e319A1B672
+   > block number:        8454545
+   > block timestamp:     1596846412
    > account:             0x12e024Db6dD4E3a6Df2B75394224eD713C2cdE38
-   > balance:             0.897955614368217178
-   > gas used:            175095
+   > balance:             1.843536486334907981
+   > gas used:            164175 (0x2814f)
    > gas price:           20 gwei
    > value sent:          0 ETH
-   > total cost:          0.0035019 ETH
+   > total cost:          0.0032835 ETH
 
    Pausing for 2 confirmations...
    ------------------------------
-   > confirmation number: 2 (block: 8450131)
+   > confirmation number: 1 (block: 8454546)
+   > confirmation number: 2 (block: 8454547)
+
+   > Saving migration to chain.
    > Saving artifacts
    -------------------------------------
-   > Total cost:           0.0035019 ETH
+   > Total cost:           0.0032835 ETH
 
 
 2_forex_migration.js
@@ -43,27 +54,30 @@ Starting migrations...
 
    Deploying 'Forex'
    -----------------
-   > transaction hash:    0x50f6d3e7707ffd21ab2f022b46fe98c56e6f6f4e42f9dad7db8ae9a75b8a46e7
-- Blocks: 0            Seconds: 0
-   > Blocks: 0            Seconds: 13
-   > contract address:    0x58309EF38ea0903AdBcFb9d0aC0123E35160Df5B
+   > transaction hash:    0xbe9d7f113c22ad62010e9000943fb7db48a8cc48943f07bfc7376db0cbe64002
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x7Fe0c23379aBd49eE51D33163bdE00AacF70f443
+   > block number:        8454549
+   > block timestamp:     1596846461
    > account:             0x12e024Db6dD4E3a6Df2B75394224eD713C2cdE38
-   > balance:             0.885680514368217178
-   > gas used:            613755
+   > balance:             1.828220746334907981
+   > gas used:            723446 (0xb09f6)
    > gas price:           20 gwei
    > value sent:          0 ETH
-   > total cost:          0.0122751 ETH
+   > total cost:          0.01446892 ETH
 
    Pausing for 2 confirmations...
    ------------------------------
-   > confirmation number: 1 (block: 8450134)
-   > confirmation number: 2 (block: 8450135)
+   > confirmation number: 1 (block: 8454550)
+   > confirmation number: 2 (block: 8454551)
+
+   > Saving migration to chain.
    > Saving artifacts
    -------------------------------------
-   > Total cost:           0.0122751 ETH
+   > Total cost:          0.01446892 ETH
 
 
 Summary
 =======
 > Total deployments:   2
-> Final cost:          0.015777 ETH
+> Final cost:          0.01775242 ETH
